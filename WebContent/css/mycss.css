@@ -1,0 +1,405 @@
+@CHARSET "UTF-8";
+*{
+	padding:0;
+	margin:0;
+}
+   a:link { text-decoration: none;color: blue;} 
+　　 a:active { text-decoration:blink;color: red;} 
+　　 a:hover { text-decoration:none;color: red;}  
+　　 a:visited { text-decoration: none;color: red;}
+ul.t{
+	margin-left:20px;
+}
+ul.t li{
+	float:left;
+	font-size:14px;
+	margin-left:5px;
+	display:block;
+	line-height:30px;
+	vertical-align:middle;
+	text-align:center;
+}
+.btn{
+   width:80px;
+   height:35px;
+   background:orange;
+   font-size:20px;
+   font-family:Microsoft Jhenghei;  
+    font--weight:bold;
+    border-style:hidden;
+    cursor:pointer;
+     /*firefox设置圆角*/
+     -moz-border-radius:5px;
+     /*safari 等其他Webkit核心浏览器 设置圆角*/
+     -webkit-border-radius:5px;
+     /*其他浏览器例如Opera IE9+等*/
+      border-radius:5px;     
+   }
+   .btn:hover,.btn:focus{
+      background:-webkit-gradient(linear,0% 0%,0% 100%,from(orange),to(darkorange));
+      background:-moz-linear-gradient(top,orange,darkorange);/*firefox浏览器*/
+   }
+   .btn:active{
+   background-color:orange;
+   }
+   .dialogbox{
+      margin-top:10px;
+      margin-left:200px;
+      background:#f1f1f1;
+   }
+   .crumb{
+      margin-top:10px;
+      margin-left:20px;
+   }
+#divtop{
+/* background:#f1f1f1;
+ height:50px;
+
+margin-top:-15px;
+margin-left:-8px;
+margin:0px;*/
+    margin-top:0px;
+	padding:0px;
+	width:1366px;
+	min-width:1210px;
+	height:30px;
+	background:#EFEFEF;
+	box-shadow:0px 2px 5px #000;	
+ }
+ #divtop ul{
+	list-style-type:none;
+}
+ #divtop ul li a:hover{
+	color:blue;
+	text-decoration:underline;
+}
+ #top{
+   margin-left:50px;
+   margin-top:30px;
+   font-face:Microsoft Jhenghei;
+   vertical-align:middle;
+   line-height:50px;
+ }
+ .txt{
+margin-left:10px;
+height:30px;
+width:300px;
+font-face:Microsoft Jhenghei;
+font-size:20px;
+ }
+ .txtpwd{
+margin-left:30px;
+height:30px;
+width:300px;
+font-face:Microsoft Jhenghei;
+font-size:20px;
+ }
+ .div1{
+ font-face:Microsoft Jhenghei;
+ font-size:20px;
+ margin-top:30px;
+ margin-left:70px;
+ }
+ .divcode{
+ font-face:Microsoft Jhenghei;
+ font-size:20px;
+ margin-top:30px;
+ margin-left:280px;
+ }
+ .divpwd{
+ font-face:Microsoft Jhenghei;
+ font-size:20px;
+ margin-top:30px;
+ margin-left:75px;
+ }
+ .div2{
+ margin-left:210px;
+ margin-top:30px;
+ 
+ }
+ .div3{
+ margin-left:10px;
+ margin-top:30px;
+ font-face:Microsoft Jhenghei;
+font-size:20px;
+ }
+ .divemail{
+ margin-left:78px;
+ margin-top:30px;
+ font-face:Microsoft Jhenghei;
+font-size:20px;
+ }
+ .div4{
+ margin-left:50px;
+ margin-top:30px;
+ font-face:Microsoft Jhenghei;
+font-size:20px;
+ }
+ .logon{
+  width:100px;
+   height:35px;
+   background:orange;
+   font-size:20px;
+   font-family:Microsoft Jhenghei;  
+    font--weight:bold;
+    border-style:hidden;
+    cursor:pointer;
+     /*firefox设置圆角*/
+     -moz-border-radius:5px;
+     /*safari 等其他Webkit核心浏览器 设置圆角*/
+     -webkit-border-radius:5px;
+     /*其他浏览器例如Opera IE9+等*/
+      border-radius:5px;     
+      
+ }
+ .logon:hover{
+ background:-webkit-gradient(linear,0% 0%,0% 100%,from(orange),to(darkorange));
+      background:-moz-linear-gradient(top,orange,darkorange);/*firefox浏览器*/
+ }
+ .logon.active{
+ background-color:orange;
+ }
+ .content1{
+   display:none;
+    width:250px;
+    height:30px;
+    font-size:15px;
+  }
+  #d1,#d2,#d3,#d4,#d5,#msg,#pwdmsg,#repwdmsg,#emailmsg,#birmsg{
+   margin-left:200px;
+   width:350px;
+   font-face:Microsoft Jhenghei;
+  }
+  .flex-container a,.flexslider a,.flex-container a:active,.flexslider a:active,.flex-container a:focus,.flexslider a:focus
+	{
+	outline: none;
+}
+
+.slides,.flex-control-nav,.flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {
+	margin: 0;
+	padding: 0;
+}
+
+.flexslider .slides>li {
+	display: none;
+	-webkit-backface-visibility: hidden;
+} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+	max-width: 100%;
+	display: block;
+}
+
+.flex-pauseplay span {
+	text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+.slides:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+html[xmlns] .slides {
+	display: block;
+}
+
+* html .slides {
+	height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides>li:first-child {
+	display: block;
+}
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {
+	background: #fff;
+	border: 4px solid #fff;
+	position: relative;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	zoom: 1;
+}
+
+.flexslider .slides {
+	zoom: 1;
+}
+
+.flexslider .slides>li {
+	position: relative;
+}
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flex-container {
+	zoom: 1;
+	position: relative;
+}
+
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption {
+	background: none;
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,
+		endColorstr=#4C000000 );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,
+		endColorstr=#4C000000 );
+	zoom: 1;
+}
+
+.flex-caption {
+	width: 96%;
+	padding: 2%;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .3);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+	font-size: 14px;
+	line-height: 18px;
+}
+
+/* Direction Nav */
+.flex-direction-nav {
+	height: 0;
+}
+
+.flex-direction-nav a {
+	width: 52px;
+	height: 52px;
+	margin: -13px 0 0;
+	display: block;
+	background: url("../images/bg_direction_nav.png") no-repeat;
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+	text-indent: -999em;
+}
+
+.flex-direction-nav .flex-next {
+	background-position: -52px 0;
+	right: -21px;
+}
+
+.flex-direction-nav .flex-prev {
+	left: -20px;
+}
+
+.flex-direction-nav .flex-disabled {
+	opacity: .3;
+	filter: alpha(opacity =     30);
+	cursor: default;
+}
+
+/* Control Nav */
+.flex-control-nav {
+	width: 98%;
+	position:absolute;
+	bottom:15px;
+	text-align: right;
+}
+
+.flex-control-nav li {
+	margin: 0 0 0 5px;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	margin-right:5px
+}
+/*
+.flex-control-nav li:first-child {
+	margin:5px
+}*/
+
+.flex-control-nav a {
+	width: 13px;
+	height: 13px;
+	display: block;
+	background: url("../images/bg_control_nav.png") no-repeat;
+	cursor: pointer;
+	text-indent: 999em;
+	
+}
+
+.flex-control-nav a:hover {
+	background-position: 0 -13px;
+}
+
+.flex-control-nav a.flex-active {
+	background-position: 0 -26px;
+	cursor: default;
+}
+.txtsearch{
+	width:400px;
+	height:40px;
+	margin-left:5px;
+	align:middle;
+	font-size:30px;
+	font-face:Microsoft Jhenghei;
+}
+.searchf{
+	font-size:30px;
+	font-face:Microsoft Jhenghei;
+	width:300px;
+	align:center;
+}
+#left{
+	width:300px;
+	height:1000px;
+	background-color:#f1f1f1;
+	float:left;
+}
+#year{
+	margin-left:35px;
+	font-size:20px;
+	font-face:Microsoft Jhenghei;
+	width:100px;
+	height:30px;
+}
+#month,#day{
+	margin-left:10px;
+	font-size:20px;
+	font-face:Microsoft Jhenghei;
+	width:100px;
+	height:30px;
+	
+}
+.txtname{
+	width:150px;
+	height:30px;
+	font-size:20px;
+	font-face:Microsoft Jhenghei;
+	border:none;
+}
+.txtprice{
+	width:80px;
+	height:30px;
+	font-size:20px;
+	font-face:Microsoft Jhenghei;
+	border:none;
+}
+.txtstate{
+	width:150px;
+	height:30px;
+	font-size:20px;
+	font-face:Microsoft Jhenghei;
+	border:none;
+}

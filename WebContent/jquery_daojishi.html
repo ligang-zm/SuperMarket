@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>Jquery实现倒计时效果</title> 
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript"> 
+function djs(SysSecond,fn){
+ var InterValObj; 
+ //将时间减去1秒，计算天、时、分、秒 
+ InterValObj = window.setInterval(function(){ 
+  if (SysSecond > 0) { 
+   var second = Math.floor(SysSecond % 60);             // 计算秒     
+   var minite = Math.floor((SysSecond / 60) % 60);      //计算分 
+   var hour = Math.floor((SysSecond / 3600) % 24);      //计算小时 
+   var day = Math.floor((SysSecond / 3600) / 24); 		//计算天 
+   SysSecond = SysSecond - 1;        
+   var msg=day + "天" + hour + "小时" + minite + "分" + second + "秒";
+  	fn(msg); 
+  } else {//剩余时间小于或等于0的时候，就停止间隔函数 
+   window.clearInterval(InterValObj);
+   fn("限时抢购结束");
+   //这里可以添加倒计时时间为0后需要执行的事件 
+  } 
+ },1000); 
+}
+</script>
+</head> 
+<body> 
+     
+<div id="remainSeconds" style="display:none">360000</div> 
+<div id="remainTime" style="font-size:20px;font-weight:800;color:#FF9900"></div>
+<div id="remainSeconds2" style="display:none">550000</div> 
+<div id="remainTime2" style="font-size:20px;font-weight:800;color:#FF9900"></div>  
+<script type="text/javascript">
+	var SysSecond = parseInt($("#remainSeconds").html());
+	alert(SysSecond);
+	djs(SysSecond,function(msg){
+		document.getElementById('remainTime').innerHTML = msg;
+		});
+	var SysSecond2 = parseInt($("#remainSeconds2").html());
+	djs(SysSecond2,function(msg){
+		document.getElementById('remainTime2').innerHTML = msg;
+		});
+</script> 
+</body> 
+</html>

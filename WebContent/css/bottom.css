@@ -1,0 +1,49 @@
+div.bottom{
+	border-top:orange 1px solid;
+	padding:0px;
+	margin:0px auto;
+	width:1210px;
+	height:500px;
+}
+div.bottom div.detail{
+	margin-top:80px;
+	margin:0px auto;
+	padding:0px;
+	width:910px;
+	height:200px;
+}
+div.bottom div.detail div{
+	width:180px;
+	height:200px;
+	float:left;
+	
+}
+div.bottom div.company{
+	margin:0px auto;
+	padding:0px;
+	width:900px;
+	height:250px;
+	
+}
+div.bottom div.detail div ul li{
+	display:block;
+	width:180px;
+	height:35px;
+	font:16px/1.5 Tahoma,'Microsoft Yahei','Microsoft Jhenghei','Simsun';
+	color:#808080;
+}
+div.bottom div.detail div ul li.l-head{
+	font-size:18px;
+	font-style:bold;
+	color:#000;
+}
+div.bottom div.detail div img{
+	padding:0px;
+	margin-left:0px;
+	margin-top:40px;
+	width:80px;
+	height:80px;
+}
+ul {
+	list-style:none;
+}
